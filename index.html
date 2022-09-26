@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/9a1e245a38.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
+
     <title>Comics.com</title>
   </head>
   <body>
     <header>
-      <div class="header-logo"><a href="index.html"><img src="/images/captain_america.png" alt=""></a></div>
+      <div class="header-logo">
+        <h1>Comics.com</h1>
+        <a href="index.html"
+          ><img src="/images/captain_america.png" alt=""
+        /></a>
+      </div>
       <nav class="header-menubar">
         <ul>
           <li>
@@ -30,11 +47,14 @@
     <main>
       <div class="content">
         <section class="main-section">
-          <img src="/images/spideybanner.png" alt="Spiderman">
+          <img src="/images/spideybanner.png" alt="Spiderman" />
         </section>
         <section class="main-section">
           <article>
-            <img src="/images/thorlovethunderbanner.jpg" alt="Thor Love and Thunder" />
+            <img
+              src="/images/thorlovethunderbanner.jpg"
+              alt="Thor Love and Thunder"
+            />
             <div>
               <h3>Thor Love and Thunder</h3>
               <p>
@@ -49,6 +69,8 @@
                 aventura cósmica para descubrir el misterio de la venganza del
                 Dios Carnicero y detenerlo antes de que sea demasiado tarde.
               </p>
+              <br />
+                <a href="#" class="more">Leer más.</a>
             </div>
           </article>
           <article>
@@ -71,14 +93,51 @@
                 Danvers modificó el transmisor de Fury para que la llame en caso
                 de una emergencia.
               </p>
+              <br />
+                <a href="#" class="more">Leer más.</a>
             </div>
           </article>
         </section>
       </div>
       <aside>
-        <img src="/images/mcu gif.gif" alt="">
+        <img src="/images/mcu gif.gif" alt="" />
       </aside>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="box-uno">
+        <div class="box-left">
+          <figure>
+            <a href="#">
+              <img src="/images/captain-america.png" alt="Comics logo" />
+            </a>
+          </figure>
+        </div>
+        <div class="box-center">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            voluptate?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            voluptate?
+          </p>
+        </div>
+        <div class="box-right">
+          <h2>SÍGUENOS</h2>
+          <div class="media">
+            <a href="#" class="fa-brands fa-square-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="box-dos">
+        <small
+          >&copy; 2022 <b>Comics.com</b> - Todos los derechos reservados.
+        </small>
+      </div>
+    </footer>
   </body>
 </html>

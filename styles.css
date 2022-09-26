@@ -25,7 +25,7 @@ header {
     background-color: yellow;
     box-shadow: 0 0 0.5rem rgb(83, 78, 76);
     min-height: 80px;
-    
+    font-family: 'Bangers', cursive;
 }
 
 .header-menubar {
@@ -120,7 +120,75 @@ img {
 
 footer {
     background-color: rgb(33, 33, 222);
-    min-height: 150px;
+    min-height: 0px;
     width:inherit;
 }
 
+.footer .box-uno {
+   
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 50px 0px;
+}
+
+.footer .box-uno .box-lef figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .box-uno .box-lef figure img {
+    height: 50px;
+    width: auto;
+
+}
+
+.footer .box-uno .box-center h2 {
+    color: aliceblue;
+    margin-bottom: 15%;
+    font-family: 'Bangers', cursive;
+}
+
+.footer .box-uno .box-center p {
+    color: aliceblue;
+}
+
+.footer .box-uno .box-right .media a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    width: 40px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.footer .box-uno .box-right .media a:hover {
+    color: red;
+}
+
+.footer .box-right h2 {
+    font-family: 'Bangers', cursive;
+    color: aliceblue;
+    text-align: ;
+}
+
+.footer .box-dos {
+    background-color: yellow;
+    color: rgb(33, 33, 222);
+    padding: 15px 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .footer .box-uno {
+    width: 90px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 30px 0px;
+}
+}
