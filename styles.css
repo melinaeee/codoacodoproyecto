@@ -2,10 +2,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    text-decoration: none;
     list-style: none;
+    text-decoration: none;
 }
-
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -13,18 +12,18 @@ body {
 }
 
 nav {
-    background-color: yellow;
+    background: yellow;
     height: 80px;
     width: 100%;
 }
 
-.enlace {
-    position: absolute;
-    padding: 20px 50px;
-}
-
-img .header-logo {
-    height: 40px;
+label {
+    color: black;
+    font-size: 55px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
 }
 
 nav ul {
@@ -35,26 +34,25 @@ nav ul {
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: blue;
-    font-size: 1.2rem;
-    margin: 10px 5px;
-    font-weight:bold;
+    font-size: 1.5rem;
+    font-family: 'Bangers';
 }
 
-a:hover {
+nav ul li a:hover {
     color: red;
 }
 
 .checkbtn {
     font-size: 30px;
     color: blue;
-    float:right;
+    float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-right: 20px;
     cursor: pointer;
     display: none;
 }
@@ -63,11 +61,51 @@ a:hover {
     display: none;
 }
 
-img .banner {
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh-80px);
+@media (max-width: 952px) {
+    label.title {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
 }
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
 
 
 main {
@@ -128,40 +166,27 @@ footer {
     width:inherit;
 }
 
-.footer .box-uno {
-    
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 50px 0px;
-}
-
-.footer .box-uno .box-lef figure {
+footer .box-uno {
+    width: 1200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer .box-uno .box-lef figure img {
-    height: 50px;
-    width: auto;
-}
-
-.footer .box-uno .box-center h2 {
+    justify-content: space-between;
     color: aliceblue;
-    margin-bottom: 15%;
+    padding: 30px 30px;
+}
+
+.box-uno .box-left h2 {
+    font-family: 'Bangers', cursive;
+    margin-bottom: 15px;
+}
+
+.box-uno .box-center h2 {
+    margin-bottom: 10%;
     font-family: 'Bangers', cursive;
 }
 
-.footer .box-uno .box-center p {
+.box-uno .box-center .media a {
     color: aliceblue;
-}
-
-.footer .box-uno .box-right .media a {
     text-decoration: none;
-    color: aliceblue;
     font-size: 20px;
     width: 40px;
     height: 45px;
@@ -170,23 +195,18 @@ footer {
     text-align: center;
 }
 
-.footer .box-uno .box-right .media a:hover {
+.box-uno .box-center .media a:hover {
     color: red;
 }
 
-.footer .box-right h2 {
+.box-center h2 {
     font-family: 'Bangers', cursive;
     text-align: left;
-    color: aliceblue;
-    padding: 10px 0px 0px 60px;
 }
 
-.footer .box-dos {
+footer .box-dos {
     background-color: yellow;
     color: rgb(33, 33, 222);
     padding: 15px 10px;
     text-align: center;
-}
-
-
 }
