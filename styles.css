@@ -160,53 +160,66 @@ img {
     width: 65%;
 }
 
+
 footer {
-    background-color: rgb(33, 33, 222);
-    min-height: 0px;
-    width:inherit;
+    bottom: 0px;
+    width: 100%;
+    background: blue;
+    position: inherit;
 }
 
-footer .box-uno {
-    width: 1200px;
+.contenedor {
     display: flex;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding: 30px;
+}
+
+.footer .left {
+    flex-basis: 50%;
+    padding: 40px 30px;
+}
+
+.left h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Bangers';
     color: aliceblue;
-    padding: 30px 30px;
+    padding: 20px 0 0 30px;
 }
 
-.box-uno .box-left h2 {
-    font-family: 'Bangers', cursive;
-    margin-bottom: 15px;
-}
-
-.box-uno .box-center h2 {
-    margin-bottom: 10%;
-    font-family: 'Bangers', cursive;
-}
-
-.box-uno .box-center .media a {
+.left p {
+    margin: 20px 0 0 0;
     color: aliceblue;
-    text-decoration: none;
-    font-size: 20px;
-    width: 40px;
-    height: 45px;
-    line-height: 45px;
-    margin-right: 10px;
-    text-align: center;
+    font-size: 1.3rem;
+    padding: 20px 0 0 30px;
 }
 
-.box-uno .box-center .media a:hover {
+.center .social {
+    margin: 20px;
+}
+
+.center h2 {
+    font-family: 'Bangers', cursive;
+    padding: 20px 0 0 30px;
+    color: aliceblue;
+    letter-spacing: 1px;
+}
+
+.center .social a {
+    padding: 15px 15px 20px;
+    color: yellow;
+    font-size: 30px;
+}
+
+.center .social a:hover {
     color: red;
 }
 
-.box-center h2 {
-    font-family: 'Bangers', cursive;
-    text-align: left;
-}
-
-footer .box-dos {
-    background-color: yellow;
-    color: rgb(33, 33, 222);
-    padding: 15px 10px;
+.pie-pagina {
+    background: yellow;
     text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: blue;
 }
