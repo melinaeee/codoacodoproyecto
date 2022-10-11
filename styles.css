@@ -9,6 +9,7 @@
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
+    
 }
 
 nav {
@@ -107,58 +108,67 @@ nav ul li a:hover {
 }
 
 
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+
+}
+
+.container li {
+    width: 100%;
+    list-style: none;
+}
+
+.container img {
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    padding: 0 40px 20 40px;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% {margin-left: 0; }
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
 
 main {
-    min-height: 200px;
-    overflow: auto;
     background-image: url(/images/21_3_fondo_comic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: auto;
+    width: 100%;
 }
 
-.secondary {
-    borde: 2px blue solid;
-    min-height: 180px;
-    margin: 0.5rem;
+.contenedor {
+    display: grid;
+    margin: 20px auto;
+    padding: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
 }
 
-aside {
-    borde: 2px blue solid;
-    min-height: 180px;
-    margin: 0.5rem;
-    min-width: 30%;
-    float: right;
-    width: 30%;
-}
 
-.main-section {
-    borde: 2px green solid;
-    min-height: 50px;
-    margin: 0.5rem;
-}
 
-.main-section article {
-    borde: 2px purple solid;
-    margin: 0.5rem;
-    min-height: 20px;
-    padding: 20px;
-}
-
-img {
-    width:100%;
-    padding: 20px;
-}
-
-.gif {
-    width: 50%;
-}
-
-.content {
-    height: auto;
-    float: left;
-    width: 65%;
-}
 
 
 footer {
@@ -170,9 +180,8 @@ footer {
 
 .contenedor {
     display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    padding: 30px;
+    column-gap: 2.5rem;
+    padding: 30px 20px;
 }
 
 .footer .left {
@@ -208,8 +217,11 @@ footer {
 
 .center .social a {
     padding: 15px 15px 20px;
+    
     color: yellow;
+    text-align: center;
     font-size: 30px;
+    line-height: 50px;
 }
 
 .center .social a:hover {
@@ -222,4 +234,26 @@ footer {
     font-size: large;
     font-weight: bold;
     color: blue;
+}
+
+@media(max-width: 952px) {
+    .contenedor {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media(max-width: 574px) {
+    .contenedor {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .right {
+        display: none;
+    }
 }
