@@ -111,6 +111,7 @@ nav ul li a:hover {
 .container {
     width: 100%;
     overflow: hidden;
+    padding: 0 0 10px 0;
 }
 
 .container ul {
@@ -120,7 +121,6 @@ nav ul li a:hover {
     width: 400%;
 
     animation: cambio 20s infinite alternate linear;
-
 }
 
 .container li {
@@ -159,16 +159,30 @@ main {
     width: 100%;
 }
 
-.contenedor {
+
+.contenedor-main .cards {
     display: grid;
-    margin: 20px auto;
-    padding: 30px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    margin: 45px;
+    width: 90%;
+    
+    padding: 5%;
 }
 
+.contenedor-main .cards img {
+    width: 250px;
+    height: auto;
+}
 
+.coming-soon {
+    display: grid;
+    grid-template-columns: 45% 35% auto;
+    
+    margin: 40px 60px 40px 60px;
+    padding: 30px;
 
+}
 
 
 footer {
@@ -179,47 +193,39 @@ footer {
 }
 
 .contenedor {
-    display: flex;
-    column-gap: 2.5rem;
-    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 45% 35% auto;
+    justify-content: space-around;
+    padding: 30px;
 }
 
-.footer .left {
-    flex-basis: 50%;
-    padding: 40px 30px;
-}
 
 .left h2 {
-    font-size: 1.7rem;
+   
     font-weight: bold;
     font-family: 'Bangers';
     color: aliceblue;
-    padding: 20px 0 0 30px;
 }
 
 .left p {
     margin: 20px 0 0 0;
     color: aliceblue;
     font-size: 1.3rem;
-    padding: 20px 0 0 30px;
 }
 
 .center .social {
     margin: 20px;
-}
+}   
 
 .center h2 {
     font-family: 'Bangers', cursive;
-    padding: 20px 0 0 30px;
     color: aliceblue;
     letter-spacing: 1px;
 }
 
 .center .social a {
     padding: 15px 15px 20px;
-    
     color: yellow;
-    text-align: center;
     font-size: 30px;
     line-height: 50px;
 }
