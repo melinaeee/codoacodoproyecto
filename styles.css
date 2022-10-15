@@ -326,3 +326,51 @@ footer {
     outline: none;
     cursor: pointer;
 }
+
+
+
+.grid-pelis-shows {
+    display: grid;
+    grid-template-rows: 600px 600px 600px 600px;
+    padding: 20px;
+    
+}
+
+.clasicos {
+    grid-template-columns: 20%;
+    justify-content: space-between;
+    
+    margin: 20px;
+    padding: 30px;
+}
+
+.clasicos img {
+    height: 400px;
+    width: auto;
+    padding: 20px 30px;
+
+}
+
+.proximamente {
+    
+    margin: 20px;
+    padding: 30px 40px;
+}
+
+.proximamente img {
+    
+    height: 450px;
+    width: auto;
+    padding: 20px 30px;
+
+.series {
+    border: 2px black solid;
+    margin: 20px;
+    padding: 30px 40px;
+}
+
+.animadas {
+    border: 2px black solid;
+    margin: 20px;
+    padding: 30px 40px;
+}
