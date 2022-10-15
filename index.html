@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
       rel="stylesheet"
     />
-
+    <script src="app.js"></script>
     <script
       src="https://kit.fontawesome.com/9a1e245a38.js"
       crossorigin="anonymous"
@@ -37,23 +37,44 @@
       </nav>
     </header>
 
-    <div class="container">
-      
-      <ul class="slider-imgs">
-        <li class="slide1">
-          <img src="/images/Slide/spidermanOC.jpg" alt="" />
-        </li>
-        <li class="slide2"><img src="/images/Slide/ThorRSC.jpg" alt="" /></li>
-        <li class="slide3"><img src="/images/Slide/giveawayC.jpg" alt="" /></li>
-        <li class="slide4">
-          <img src="/images/Slide/arrowVRS.jpg" alt="" />
-        </li>
-      </ul>
+    <div class="slider-sp">
+      <input type="radio" name="slider-movies" />
+      <div class="img-box">
+        <img src="/images/Slide/spiderman.jpg" alt="Spider-Man No Way Home" />
+        <div class="content-imgs">
+          <h3>Spider-Man: No Way Home</h3>
+          <p>Estreno exclusivo</p>
+          <a href="#">Mírala ahora</a>
+        </div>
+      </div>
+      <input type="radio" name="slider-movies" />
+      <div class="img-box">
+        <img src="/images/Slide/giveawayC.jpg" alt="Sorteo cómics" />
+        <div class="content-imgs">
+          <h3>¡Participa de nuestro sorteo mensual!</h3>
+          <p>Los cómics más exclusivos</p>
+          <a href="#">Participa aquí</a>
+        </div>
+      </div>
+      <input type="radio" name="slider-movies" />
+      <div class="img-box">
+        <img src="/images/Slide/arrowverse.jpg" alt="Arrowverse" />
+        <div class="content-imgs">
+          <h3>El Arrowverse: ¿acierto o desastre?</h3>
+          <a href="#">Descubre la respuesta</a>
+        </div>
+      </div>
+      <input type="radio" name="slider-movies" />
+      <div class="img-box">
+        <img src="/images/Slide/Thor.jpg" alt="Thor Love and Thunder" />
+        <div class="content-imgs">
+          <h3>Gana entradas para ver 'Thor: Love and Thunder'</h3>
+          <a href="#">Participa aquí</a>
+        </div>
+      </div>
     </div>
 
-
     <main class="contenedor-main">
-     
       <div class="cards">
         <div class="widget">
           <a href=""
@@ -82,8 +103,8 @@
       <div class="coming-soon">
         <div class="video">
           <iframe
-            width="560"
-            height="315"
+            width="700"
+            height="445"
             src="https://www.youtube.com/embed/BPjbiZQmBI4"
             title="YouTube video player"
             frameborder="0"
@@ -93,25 +114,85 @@
         </div>
         <div class="texto">
           <h3>
-            Mira el trailer de "WAKANDA POR SIEMPRE", el próximo estreno cinematográfico del MCU
+            Mira el trailer de "WAKANDA POR SIEMPRE", el próximo estreno
+            cinematográfico del MCU
           </h3>
-          <br>
+          <br />
           <p>
-            En el amanecer de la muerte del Rey T'Challa, fuerzas invasoras de todo
-            el mundo ponen a la mira el Vibranium del país de Wakanda, lo que a su
-            vez desencadenaría el caos. Ahora con su líder fallecido, será deber de
-            Shuri, M'Baku, Nakia y Okoye defender a su nación, en especial cuándo
-            una misteriosa civilización emerge de las profundidades del mar para
-            iniciar una guerra.
-            <a href="https://www.cinemarkhoyts.com.ar/cartelera/VENTAS-ANTICIPADAS" class="Wakanda-tickets">
+            En el amanecer de la muerte del Rey T'Challa, fuerzas invasoras de
+            todo el mundo ponen a la mira el Vibranium del país de Wakanda, lo
+            que a su vez desencadenaría el caos. Ahora con su líder fallecido,
+            será deber de Shuri, M'Baku, Nakia y Okoye defender a su nación, en
+            especial cuándo una misteriosa civilización emerge de las
+            profundidades del mar para iniciar una guerra.
+            <a
+              href="https://www.cinemarkhoyts.com.ar/cartelera/VENTAS-ANTICIPADAS"
+              class="Wakanda-tickets"
+            >
               Compra tus entradas para el estreno aquí.
             </a>
           </p>
         </div>
+      </div>
+
+      <div class="music">
+        <div class="spotify">
+          <iframe
+            src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A3e8kWcCuI1IpIFU4SxaFx6"
+            width="700"
+            height="445"
+            frameborder="0"
+            style="border-radius: 12px"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+
+        <div class="apple">
+          <iframe
+            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+            frameborder="0"
+            height="450"
+            style="
+              width: 100%;
+              max-width: 660px;
+              overflow: hidden;
+              background: transparent;
+            "
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+            src="https://embed.music.apple.com/us/playlist/marvel-music/pl.7fdd6e74d2324a43bae830645f268538"
+          ></iframe>
+      </div>
+
+      <br>
+
+      <div class="funkos">
         
+        <div class="funko-type">
+          <a href=""
+            ><img src="/images/Funkos/Ironman.webp" alt="Captain Marvel"
+          /></a>
+        </div>
+        <div class="funko-type">
+          <a href=""
+            ><img src="/images/Funkos/Cap_Marvel.jpg" alt="Dr. Strange"
+          /></a>
+        </div>
+        <div class="funko-type">
+          <a href=""
+            ><img src="/images/Funkos/WW.jpg" alt="Superpets"
+          /></a>
+        </div>
+        <div class="funko-type">
+          <a href=""
+            ><img src="/images/Funkos/Superman.jpg" alt="Lego Batman"
+          /></a>
+        </div>
       </div>
     </main>
 
+    
+    </div>
     <footer>
       <div class="contenedor">
         <div class="left">
