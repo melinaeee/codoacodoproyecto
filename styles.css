@@ -289,18 +289,12 @@ footer {
 }
 
 .content-imgs h3 {
-    font-size: 2.3em;
+    font-size: 2em;
     font-family: 'Poppins', sans-serif;
-    line-height: 1em;
+    line-height: 1.4em;
     color: white;
     margin-top: 990px;
-}
-
-.content-imgs p {
-    font-size: 1.5em;
-    color: white;
-    margin-top: 10px;
-    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 .content-imgs a {
@@ -310,7 +304,7 @@ footer {
     padding: 10px 30px;
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 20px;
     text-decoration: none;
@@ -328,18 +322,21 @@ footer {
 }
 
 
+.cont-pelis-shows .top-image img {
+    width: 100%;
+}
+
 
 .grid-pelis-shows {
     display: grid;
-    grid-template-rows: 600px 600px 600px 600px;
+    grid-template-rows: 600px 650px 300px 570px 600px;
     padding: 20px;
-    
+    font-family: 'Poppins', sans-serif;
 }
 
 .clasicos {
     grid-template-columns: 20%;
     justify-content: space-between;
-    
     margin: 20px;
     padding: 30px;
 }
@@ -348,29 +345,49 @@ footer {
     height: 400px;
     width: auto;
     padding: 20px 30px;
-
 }
 
 .proximamente {
-    
     margin: 20px;
     padding: 30px 40px;
 }
 
 .proximamente img {
-    
     height: 450px;
     width: auto;
     padding: 20px 30px;
+}
+
+.podcast {
+    margin: 20px;
+    padding: 30px 40px;
+    display: grid;
+    grid-template-columns: 45% 50%;
+    column-gap: 10px;
+}
+
+.podcast img {
+    height: 200px;
+}
 
 .series {
-    border: 2px black solid;
     margin: 20px;
     padding: 30px 40px;
 }
 
+.series img {
+    height: 350px;
+    width: auto;
+    padding: 20px 30px;
+}
+
 .animadas {
-    border: 2px black solid;
     margin: 20px;
     padding: 30px 40px;
+}
+
+.animadas img {    
+    height: 370px;
+    width: auto;
+    padding: 20px 30px;
 }
