@@ -266,9 +266,9 @@ main {
 
 .music {
     display: grid;
-    grid-template-columns: 50% 50% auto;
+    grid-template-columns: 50% 50%;
     justify-content: space-between;
-    column-gap: 60px;
+    column-gap: 80px;
     margin: 50px 60px 80px 80px;
     padding: 50px 30px;
 }
