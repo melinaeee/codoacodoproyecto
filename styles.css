@@ -22,7 +22,7 @@ label {
     color: black;
     font-size: 55px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 40px;
     font-weight: bold;
     font-family: 'Bangers', cursive;
 }
@@ -118,54 +118,247 @@ main {
     width: 100%;
 }
 
-.contenedor-main .cards {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
-    margin: 45px;
-    width: 90%;
-    padding: 5%;
+
+.slider-sp {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 40px;
 }
 
-.contenedor-main .cards img {
-    width: 250px;
-    height: auto;
+.slider-sp .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.slider-sp input[type="radio"]:checked + .img-box {
+    z-index: 10;
+    clip-path: circle(1100px at center);
+}
+
+.slider-sp .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider-sp .img-box .content-imgs {
+    position: relative;
+    max-width: 650px;
+}
+
+
+.content-imgs h3 {
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4em;
+    color: white;
+    margin-top: 1040px;
+    padding: 50px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.content-imgs a {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 10px 25px;
+    margin-left: 40px;
+    margin-bottom: 120px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    background: red;
+}
+
+.slider-sp input[type="radio"] {
+    position: relative;
+    z-index: 1000;
+    margin: 4px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+
+
+.contenedor-main {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards {
+    grid-template-columns: 20%;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.cards h2 {
+    margin: 30px;
+}
+
+.cards img {
+    height: 400px;
+    width: auto;
+    margin-bottom: 40px;
+    padding: 20px 30px;
+}
+
+.mas {
+    padding: 10px;
+    font-size: 1em;
+    float: right;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 3px black solid;
+    background: white;
+    color: blue;
 }
 
 .coming-soon {
     display: grid;
-    
-    grid-template-columns: 50% 35% ;
-    column-gap: 60px;
-    margin: 40px 60px 40px 95px;
-    padding: 30px;
+    grid-template-columns: auto auto;
+    justify-content:center;
+    column-gap: 50px;
+    padding: 30px 75px;
+    margin: 50px 10px;
+}
+
+.coming-soon h2 {
+    margin-bottom: 40px;
+}
+
+.coming-soon .descripcion {
+    margin-bottom: 30px;
+    text-align: justify;
+    column-gap: 30px;
+}
+
+.funkos {
+    margin: 40px;
+    padding: 30px 50px;
+}
+
+.funkos img {
+    width: 270px;
+    height: auto;
+    padding: 30px 15px;
 }
 
 
 .music {
     display: grid;
-    
     grid-template-columns: 50% 50% auto;
     justify-content: space-between;
     column-gap: 60px;
-    margin: 80px 60px 80px 95px;
+    margin: 50px 60px 80px 80px;
     padding: 50px 30px;
 }
 
 
-.funkos {
+.cont-pelis-shows {
     display: grid;
-   
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
-    column-gap: 110px;
-    margin-top: 150px;
 }
 
-.funkos .funko-type img {
-    width: 250px;
-    height: auto;
+.cont-pelis-shows .top-image img {
+    width: 100%;
+    margin-bottom: 30px;
 }
+
+.grid-pelis-shows {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.clasicos {
+    grid-template-columns: 20%;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 40px;
+}
+
+.clasicos img {
+    height: 400px;
+    width: auto;
+    padding: 20px 20px;
+}
+
+.proximamente {
+    margin: 20px;
+    padding: 30px 40px;
+}
+
+.proximamente img {
+    height: 450px;
+    width: auto;
+    padding: 20px 30px;
+}
+
+.podcast {
+    display: grid;
+    grid-template-columns: 45% 50%;
+    justify-content: space-around;
+    column-gap: 10px;
+    margin: 20px;
+    padding: 30px 40px;
+}
+
+.podcast img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.podcast iframe {
+    margin-top: 30px;
+}
+
+.series {
+    margin: 20px;
+    padding: 30px 40px;
+}
+
+.series img {
+    height: 350px;
+    width: auto;
+    padding: 20px 30px;
+}
+
+.animadas {
+    margin: 20px;
+    padding: 30px 40px;
+}
+
+.animadas img {    
+    height: 370px;
+    width: auto;
+    padding: 20px 30px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 
 footer {
@@ -244,150 +437,4 @@ footer {
     .right {
         display: none;
     }
-}
-
-
-
-.slider-sp {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.slider-sp .img-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    padding: 100px;
-    display: flex;
-    align-items: center;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.slider-sp input[type="radio"]:checked + .img-box {
-    z-index: 10;
-    clip-path: circle(1100px at center);
-}
-
-.slider-sp .img-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
-}
-
-.slider-sp .img-box .content-imgs {
-    position: relative;
-    max-width: 800px;
-}
-
-.content-imgs h3 {
-    font-size: 2em;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.4em;
-    color: white;
-    margin-top: 990px;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-}
-
-.content-imgs a {
-    position: relative;
-    display: inline-block;
-    background: #fff;
-    padding: 10px 30px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    background: red;
-}
-
-.slider-sp input[type="radio"] {
-    position: relative;
-    z-index: 1000;
-    margin: 5px;
-    margin-bottom: 140px;
-    outline: none;
-    cursor: pointer;
-}
-
-
-.cont-pelis-shows .top-image img {
-    width: 100%;
-}
-
-
-.grid-pelis-shows {
-    display: grid;
-    grid-template-rows: 600px 650px 300px 570px 600px;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.clasicos {
-    grid-template-columns: 20%;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 30px;
-}
-
-.clasicos img {
-    height: 400px;
-    width: auto;
-    padding: 20px 30px;
-}
-
-.proximamente {
-    margin: 20px;
-    padding: 30px 40px;
-}
-
-.proximamente img {
-    height: 450px;
-    width: auto;
-    padding: 20px 30px;
-}
-
-.podcast {
-    margin: 20px;
-    padding: 30px 40px;
-    display: grid;
-    grid-template-columns: 45% 50%;
-    column-gap: 10px;
-}
-
-.podcast img {
-    height: 200px;
-}
-
-.series {
-    margin: 20px;
-    padding: 30px 40px;
-}
-
-.series img {
-    height: 350px;
-    width: auto;
-    padding: 20px 30px;
-}
-
-.animadas {
-    margin: 20px;
-    padding: 30px 40px;
-}
-
-.animadas img {    
-    height: 370px;
-    width: auto;
-    padding: 20px 30px;
 }
