@@ -118,7 +118,6 @@ main {
     width: 100%;
 }
 
-
 .slider-sp {
     position: relative;
     width: 100%;
@@ -160,13 +159,13 @@ main {
     max-width: 650px;
 }
 
-
 .content-imgs h3 {
     font-size: 2em;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     line-height: 1.4em;
     color: white;
-    margin-top: 1040px;
+    margin-top: 870px;
     padding: 50px;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
@@ -174,13 +173,8 @@ main {
 .content-imgs a {
     position: relative;
     display: inline-block;
-    background: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
     background: transparent;
 }
 
@@ -192,7 +186,6 @@ main {
     position: relative;
     z-index: 1000;
     margin: 4px;
-    margin-bottom: -40px;
     cursor: pointer;
 }
 
@@ -217,7 +210,7 @@ main {
 }
 
 .cards img {
-    height: 400px;
+    height: 350px;
     width: auto;
     margin-bottom: 40px;
     padding: 20px 30px;
@@ -237,9 +230,9 @@ main {
 .coming-soon {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content:center;
+    justify-content: center;
     column-gap: 50px;
-    padding: 30px 75px;
+    padding: 80px 75px;
     margin: 50px 10px;
 }
 
@@ -253,13 +246,17 @@ main {
     column-gap: 30px;
 }
 
+.coming-soon {
+    font-size: 17px;
+}
+
 .funkos {
     margin: 40px;
     padding: 30px 50px;
 }
 
 .funkos img {
-    width: 270px;
+    width: 240px;
     height: auto;
     padding: 30px 15px;
 }
@@ -269,9 +266,9 @@ main {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: space-between;
-    column-gap: 80px;
-    margin: 50px 60px 80px 80px;
-    padding: 50px 30px;
+    column-gap: 50px;
+    margin: 50px 60px 80px 60px;
+    padding: 50px 20px;
 }
 
 
@@ -299,7 +296,7 @@ main {
 }
 
 .clasicos img {
-    height: 400px;
+    height: 350px;
     width: auto;
     padding: 20px 20px;
 }
@@ -310,7 +307,7 @@ main {
 }
 
 .proximamente img {
-    height: 450px;
+    height: 400px;
     width: auto;
     padding: 20px 30px;
 }
@@ -339,7 +336,7 @@ main {
 }
 
 .series img {
-    height: 350px;
+    height: 300px;
     width: auto;
     padding: 20px 30px;
 }
@@ -350,7 +347,7 @@ main {
 }
 
 .animadas img {    
-    height: 370px;
+    height: 330px;
     width: auto;
     padding: 20px 30px;
 }
@@ -359,7 +356,6 @@ hr {
     width: 80%;
     margin: 0 auto;
 }
-
 
 
 footer {
