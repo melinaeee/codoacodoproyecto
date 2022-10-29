@@ -62,7 +62,7 @@ nav ul li a:hover {
     display: none;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 390px) {
     .title {
         font-size: 36px;
         padding-left: 10px 50px;
@@ -81,8 +81,9 @@ nav ul li a:hover {
     }
 
 
-    .cont-pelis-shows a img {
-        width: 100%;
+    .cont-pelis-shows .top-image a img {
+       width: 100%;
+       position: static;
     }
 
     .clasicos h2 {
@@ -94,7 +95,7 @@ nav ul li a:hover {
     }
     
     .grid-pelis-shows .clasicos img {
-        height: 230px;
+        height: 200px;
         width: auto;
     }
 
