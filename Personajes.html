@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Personajes</title>
+
+<style>
+      
+   .slider {
+      overflow: hidden;
+   }
+
+   .slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 20s slider infinite;
+   }
+
+   .slider figure img {
+      width: 20%;
+      float: left;
+   }
+
+   @keyframes slider {
+      0% {
+         left: 0;
+      }
+
+      20% {
+         left: 0;
+      }
+
+      25% {
+         left: -100%;
+      }
+
+      45% {
+         left: -100%;
+      }
+
+      50% {
+         left: -200%;
+      }
+
+      70% {
+         left: -200%;
+      }
+   }
+
+</style>
+   
+</head>
+<body>
+   <div class="slider">
+      <figure>
+         <div class="content-slide">
+            <img src="images/Slide/Thor.jpg" alt="">
+          </div>
+   
+          <div>
+            <img src="images/Slide/gaway.jpg" alt="">
+         </div>
+
+         <div>
+            <img src="images/Slide/spiderman.jpg" alt="">
+         </div>
+      </figure>
+   </div>
+
+</body>
+</html>
