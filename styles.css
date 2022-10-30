@@ -72,6 +72,8 @@ nav ul li a:hover {
         font-size: 16px;
     }
 
+    
+
     .cont-principal .cards a img {
         height: 250px;
     }
@@ -134,10 +136,6 @@ nav ul li a:hover {
     .apple {
         display: none;
     }
-
-    footer .left {
-        font-size: 16px;
-    }
 }
 
 
@@ -182,8 +180,9 @@ nav ul li a:hover {
     }
 
     .coming-soon iframe {
-        width: 450px;
-        height: 245px;
+        width: 345px;
+        height: 275px;
+        margin-top: 60px;
     }
     
     .coming-soon h3 {
@@ -193,7 +192,6 @@ nav ul li a:hover {
     .coming-soon p {
         font-size: 12px;
     }
-
 
 
     .cont-pelis-shows .top-image img {
@@ -240,10 +238,6 @@ nav ul li a:hover {
         width: 280px;
     }
 
-    footer img {
-        display: none;
-    }
-
 }
 
 
@@ -256,39 +250,6 @@ main {
     width: 100%;
 }
 
-.slider {
-    width: 100%;
-    margin: auto;
-    height: 700px;
-    overflow: hidden;
-}
-
-.slider ul {
-    padding: 0;
-    display: flex;
-    width: 300%;
-    animation: slider 20s infinite alternate;
-}
-
-.slider li {
-    width: 100%;
-    list-style: none;
-}
-  
-.slider li img {
-    width: 100%;
-}
-
-@keyframes slider {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-}
 
 
 .contenedor-main {
@@ -323,8 +284,8 @@ main {
     column-gap: 50px;
     justify-content: space-between;
     grid-template-rows: 10%;
-    margin: 30px 0px 0px 50px;
-    padding: 30px 0px 0px 50px;
+    margin: 30px 30px 0px 30px;
+    padding: 30px 30px 0px 30px;
     text-align: center;
 }
 
@@ -502,10 +463,11 @@ footer .pie-pagina {
     color: blue;
 }
 
-@media(max-width: 952px) {
+@media(max-width: 768px) {
     .contenedor {
         width: 50%;
         margin-bottom: 30px;
+        margin-left: 30px;
     }
 
     .right {
@@ -513,7 +475,7 @@ footer .pie-pagina {
     }
 }
 
-@media(max-width: 574px) {
+@media(max-width: 440px) {
     .contenedor {
         width: 100%;
         margin-bottom: 30px;
