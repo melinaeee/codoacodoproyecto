@@ -62,7 +62,7 @@ nav ul li a:hover {
     display: none;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 440px) {
     .title {
         font-size: 36px;
         padding-left: 10px 50px;
@@ -80,12 +80,6 @@ nav ul li a:hover {
         font-size: 12px;
     }
 
-
-    .cont-pelis-shows .top-image a img {
-       width: 100%;
-       position: static;
-    }
-
     .clasicos h2 {
         font-size: 18px;
     }
@@ -94,39 +88,40 @@ nav ul li a:hover {
         font-size: 22px;
     }
     
-    .grid-pelis-shows .clasicos img {
-        height: 200px;
-        width: auto;
+    .grid-pelis-shows {
+        border: 2px red solid;
+    }
+
+
+    .grid-pelis-shows .clasicos a img {
+        width: 130px;
+        height: auto;
     }
 
     #proximamente h2 {
         font-size: 18px;
     }
 
-    #proximamente a img  {
-        row-gap: 150px;
+    .grid-pelis-shows #proximamente a img  {
+        width: 140px;
     }
 
-    .podcast {
-        height: 300px;
+    .podcast h2 {
+        font-size: 18px;
     }
 
-    .podcast img {
-        display: none;
-    }
-
-    .series a img {
-        height: 230px;
+    .grid-pelis-shows .series a img {
+        height: 140px;
         width: auto;
     }
 
-    .animadas a img {
-        height: 230px;
+    .grid-pelis-shows .animadas a img {
+        height: 157px;
         width: auto;
     }
 
     .music iframe {
-        width: 350px;   
+        width: 350px;
     }
 
     .apple {
@@ -221,6 +216,7 @@ nav ul li a:hover {
     footer img {
         display: none;
     }
+
 }
 
 
@@ -351,7 +347,7 @@ main {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: space-around;
-    margin: 50px 60px 80px 60px;
+    margin: 50px 30px 50px;
     padding: 50px 25px;
 }
 
@@ -375,8 +371,9 @@ main {
 .clasicos {
     grid-template-columns: 20%;
     justify-content: space-between;
-    margin: 30px;
-    padding: 40px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
 .clasicos img {
@@ -386,8 +383,11 @@ main {
 }
 
 #proximamente {
+    grid-template-columns: 20%;
+    justify-content: space-between;
     margin: 20px;
-    padding: 30px 40px;
+    padding: 10px;
+    text-align: center;
 }
 
 #proximamente img {
@@ -397,26 +397,16 @@ main {
 }
 
 .podcast {
-    display: grid;
-    grid-template-columns: 45% 50%;
-    justify-content: space-around;
-    column-gap: 10px;
+    text-align: center;
     margin: 20px;
-    padding: 30px 40px;
+    padding: 15px;
 }
 
-.podcast img {
-    height: 200px;
-    margin-top: 20px;
-}
-
-.podcast iframe {
-    margin-top: 30px;
-}
 
 .series {
     margin: 20px;
-    padding: 30px 40px;
+    padding: 10px;
+    text-align: center;
 }
 
 .series img {
@@ -427,7 +417,8 @@ main {
 
 .animadas {
     margin: 20px;
-    padding: 30px 40px;
+    padding: 10px;
+    text-align: center;
 }
 
 .animadas img {    
@@ -441,6 +432,9 @@ hr {
     margin: 0 auto;
 }
 
+.music {
+    text-align: center;
+}
 
 footer {
     bottom: 0px;
@@ -484,10 +478,14 @@ footer {
     color: yellow;
     font-size: 30px;
     line-height: 50px;
-}
 
 .center .social a:hover {
     color: red;
+}
+
+footer .right img {
+    text-align: center;
+    padding: 0 50px;
 }
 
 .pie-pagina {
