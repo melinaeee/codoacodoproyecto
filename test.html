@@ -22,50 +22,49 @@
     <link rel="stylesheet" href="styles.css" />
     <style>
       
-   .slider {
-      overflow: hidden;
-   }
-
-   .slider figure {
-      position: relative;
-      width: 500%;
+    * {
       margin: 0;
-      left: 0;
-      animation: 20s slider infinite;
-   }
+      padding: 0;
+    }
+    .slider-test {
+      width: 100%;
+      margin: auto;
+      height: 700px;
+      overflow: hidden;
+    }
 
-   .slider figure img {
-      width: 20%;
-      float: left;
-   }
+    .slider-test ul {
+      padding: 0;
+      display: flex;
+      width: 300%;
+      animation: slider 20s infinite alternate;
+    }
 
-   @keyframes slider {
-      0% {
-         left: 0;
-      }
+    .slider-test li {
+      width: 100%;
+      list-style: none;
+    }
+  
+    .slider-test li img {
+      width: 100%;
+    }
 
-      20% {
-         left: 0;
-      }
+    .contenedor-main {
+      border: 2px red solid;
+    }
 
-      25% {
-         left: -100%;
-      }
+    @keyframes slider {
+      0% {margin-left: 0;}
+      20% {margin-left: 0;}
 
-      45% {
-         left: -100%;
-      }
+      25% {margin-left: -100%;}
+      45% {margin-left: -100%;}
 
-      50% {
-         left: -200%;
-      }
+      50% {margin-left: -200%;}
+      70% {margin-left: -200%;}
+    }
 
-      70% {
-         left: -200%;
-      }
-   }
-
-</style>
+    </style>
     <title>Comics!</title>
   </head>
   <body>
@@ -86,22 +85,14 @@
       </nav>
     </header>
 
-    
-      <div class="slider">
-      <figure>
-         <div class="content-slide">
-            <img src="images/Slide/Thor.jpg" alt="">
-          </div>
-   
-          <div>
-            <img src="images/Slide/gaway.jpg" alt="">
-         </div>
-
-         <div>
-            <img src="images/Slide/spiderman.jpg" alt="">
-         </div>
-      </figure>
-   </div>
+    <div class="slider-test">
+      <ul>
+        <li><img src="images/Slide/spiderman.jpg" alt=""></li>
+        <li><img src="images/Slide/gaway.jpg" alt=""></li>
+        <li><img src="images/Slide/Thor.jpg" alt=""></li>
+      </ul>
+    </div>
+      
 
 
 

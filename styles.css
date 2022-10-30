@@ -72,6 +72,21 @@ nav ul li a:hover {
         font-size: 16px;
     }
 
+    .cont-principal .cards a img {
+        height: 250px;
+    }
+
+    .coming-soon .wakanda {
+        width: 350px;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 150px 1fr;
+    }
+
+    .coming-soon .descripcion {
+        grid-area: 1 / 2;
+    }
+
 
     .proximamente h2 {
         font-size: 22px;
@@ -180,6 +195,7 @@ nav ul li a:hover {
     }
 
 
+
     .cont-pelis-shows .top-image img {
         width: 100%; 
         height: auto;
@@ -241,47 +257,39 @@ main {
 }
 
 .slider {
+    width: 100%;
+    margin: auto;
+    height: 700px;
     overflow: hidden;
 }
 
-.slider figure {
-    position:relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: slider 20s infinite;
+.slider ul {
+    padding: 0;
+    display: flex;
+    width: 300%;
+    animation: slider 20s infinite alternate;
 }
 
-.slider figure img {
-    width: 20%;
-    float: left;
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+  
+.slider li img {
+    width: 100%;
 }
 
 @keyframes slider {
-    0% {
-        left: 0;
-    }
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
 
-    20% {
-        left: 0;
-    }
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
 
-    25% {
-        left: -100%;
-    }
-
-    45% {
-        left: -100%;
-    }
-
-    50% {
-        left: -200%;
-    }
-
-    70% {
-        left: -200%;
-    }
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
 }
+
 
 .contenedor-main {
     display: grid;
@@ -309,49 +317,28 @@ main {
     padding: 20px 30px;
 }
 
-.mas {
-    padding: 10px;
-    font-size: 1em;
-    float: right;
-    font-weight: bold;
-    border-radius: 20px;
-    border: 3px black solid;
-    background: white;
-    color: blue;
-    margin-bottom: 40px;
-}
-
 .coming-soon {
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-    padding: 20px 5px 20px 30px;
-    margin: 30px;
-}
-
-.coming-soon .video-title h2 {
-    margin-bottom: 40px;
-    
-}
-
-.coming-soon iframe {
+    justify-content: space-between;
+    grid-template-rows: 10%;
+    margin: 30px 0px 0px 50px;
+    padding: 30px 0px 0px 50px;
     text-align: center;
 }
 
-.coming-soon .descripcion {
-    margin-bottom: 30px;
-    text-align: justify;
-    column-gap: 30px;
-}
 
-.coming-soon {
+.coming-soon .descripcion {
+    text-align: justify;
     font-size: 17px;
 }
+
 
 .funkos {
     margin: 40px;
     padding: 30px 50px;
+    text-align: center;
 }
 
 .funkos img {
@@ -496,6 +483,7 @@ footer {
     color: yellow;
     font-size: 30px;
     line-height: 50px;
+}   
 
 .center .social a:hover {
     color: red;
@@ -506,7 +494,7 @@ footer .right img {
     padding: 0 50px;
 }
 
-.pie-pagina {
+footer .pie-pagina {
     background: yellow;
     text-align: center;
     font-size: large;
