@@ -72,26 +72,18 @@ nav ul li a:hover {
         font-size: 16px;
     }
 
-    .slider-sp {
-        max-height: 80px;
+
+    .proximamente h2 {
+        font-size: 22px;
     }
 
     .content-imgs h3 a {
         font-size: 12px;
     }
-
+    
     .clasicos h2 {
         font-size: 18px;
     }
-
-    .proximamente h2 {
-        font-size: 22px;
-    }
-    
-    .grid-pelis-shows {
-        border: 2px red solid;
-    }
-
 
     .grid-pelis-shows .clasicos a img {
         width: 130px;
@@ -168,6 +160,25 @@ nav ul li a:hover {
     #check:checked ~ ul {
         left: 0;
     }
+
+
+    .cards a img {
+        height: 300px;
+    }
+
+    .coming-soon iframe {
+        width: 450px;
+        height: 245px;
+    }
+    
+    .coming-soon h3 {
+        font-size: 14px;
+    }
+
+    .coming-soon p {
+        font-size: 12px;
+    }
+
 
     .cont-pelis-shows .top-image img {
         width: 100%; 
@@ -284,6 +295,7 @@ main {
     justify-content: space-between;
     margin: 20px;
     margin-top: 40px;
+    text-align: center;
 }
 
 .cards h2 {
@@ -306,19 +318,25 @@ main {
     border: 3px black solid;
     background: white;
     color: blue;
+    margin-bottom: 40px;
 }
 
 .coming-soon {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 50px;
-    padding: 80px 75px;
-    margin: 50px 10px;
+    padding: 20px 5px 20px 30px;
+    margin: 30px;
 }
 
-.coming-soon h2 {
+.coming-soon .video-title h2 {
     margin-bottom: 40px;
+    
+}
+
+.coming-soon iframe {
+    text-align: center;
 }
 
 .coming-soon .descripcion {
