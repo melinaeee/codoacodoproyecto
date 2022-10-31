@@ -18,7 +18,7 @@ nav {
     width: 100%;
 }
 
-label {
+.title {
     color: black;
     font-size: 55px;
     line-height: 80px;
@@ -29,13 +29,13 @@ label {
 
 nav ul {
     float: right;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 nav ul li {
-    display: inline-block;
-    line-height: 80px;
+    display: inline;
     margin: 0 15px;
+    line-height: 80px;
 }
 
 nav ul li a {
@@ -433,7 +433,7 @@ footer {
 .left p {
     margin: 20px 0 0 0;
     color: aliceblue;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .center .social {
@@ -446,16 +446,17 @@ footer {
     letter-spacing: 1px;
 }
 
-.center .social a {
+footer .fa-brands {
     padding: 15px 15px 20px;
-    color: yellow;
     font-size: 30px;
     line-height: 50px;
-}   
+    color: yellow;
+} 
 
-.center .social a:hover {
+.center .fa-brands a:hover {
     color: red;
 }
+
 
 footer .right img {
     text-align: center;
@@ -505,3 +506,138 @@ footer .pie-pagina {
         display: none;
     }
 }
+
+
+
+
+
+
+.grid-layaut {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
+.C0 {
+    grid-column: 1/3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 20px;
+}
+
+body
+  .contact_form{ 
+    width: 600px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    padding-left: 30px; 
+    text-align: center;
+  }
+
+  input{
+    width: 500px; 
+    height: 50px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: red; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  textarea{
+    width: 500px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: red; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  label{
+    display: block; 
+    float: center; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 10px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: red; 
+    border-color: red; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  button p{
+    color: white; 
+  }
+  
+  span{
+    color: red; 
+  }
+  
+  .aviso{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;  
+    color: black;  
+  }
+  
+  h1{
+    font-family:'Poppins', sans-serif;
+    font-size: 40px;  
+    text-align: letf; 
+    padding-bottom: 10px; 
+    color: black;
+  }
+  
+  h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+    padding-bottom: 10px;
+    color: black;   
+  }
+  
+  p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; 
+    color: black; 
+  }
+  
+  ::-webkit-input-placeholder {
+   color: gray;
+  }
+    
+  ::-webkit-textarea-placeholder {
+   color: gray;
+  }
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid yellow;
+  }
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid yellow;
+  }
