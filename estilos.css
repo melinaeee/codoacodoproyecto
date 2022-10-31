@@ -29,7 +29,11 @@ nav {
 
 nav ul {
     float: right;
-    margin-right: 40px;
+    margin-right: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
 }
 
 nav ul li {
@@ -529,7 +533,6 @@ footer .pie-pagina {
     padding: 20px;
 }
 
-body
   .contact_form{ 
     width: 600px; 
     height: auto;
@@ -566,7 +569,7 @@ body
     padding-top: 15px; 
   }
   
-  label{
+  label {
     display: block; 
     float: center; 
     font-family: 'Poppins', sans-serif;
@@ -593,7 +596,7 @@ body
     color: white; 
   }
   
-  span{
+  span .obligatorio {
     color: red; 
   }
   
