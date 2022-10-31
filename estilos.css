@@ -514,7 +514,14 @@ footer .pie-pagina {
 
 
 
+.animacion {
+    transition: 2s;
+    text-align: center;
+}
 
+.animacion:hover {
+    transform: translateX(150px);
+}
 
 .grid-layaut {
     display: grid;
